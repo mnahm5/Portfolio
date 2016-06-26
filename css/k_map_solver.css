@@ -3,16 +3,10 @@
     background-color: black;
     opacity: 0.7;
 }
-/*!
- * Start Bootstrap - Simple Sidebar (http://startbootstrap.com/)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
-
-/* Toggle Styles */
 
 #wrapper {
     padding-left: 0;
+    margin-top: 54px;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -128,4 +122,8 @@
         position: relative;
         margin-right: 0;
     }
+}
+
+#main_content {
+    margin: 25px;
 }
