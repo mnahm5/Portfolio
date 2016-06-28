@@ -1,5 +1,16 @@
+.well {
+    background-color: #999999;
+}
+
+#page-content-wrapper {
+
+}
+
 #main_content {
-    text-align: center;
     padding-left: 100px;
     padding-right: 100px;
+}
+
+#background_info > p {
+    text-align: justify;
 }
