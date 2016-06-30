@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Crawler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/webCrawler.css">
+</head>
+<body>
+<div id="header_menu"></div>
+<div id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#wrapper">
+                    Web Crawler
+                    <i class="fa fa-bug" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#background_info">Background Info</a>
+            </li>
+            <li>
+                <a href="#tutorial">Tutorial</a>
+            </li>
+            <li>
+                <a href="#implementation">Implementation and Source Code</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </a>
+                    <div id="main_content">
+                        <div class="well well-sm">
+                            Tools used: HTML5, CSS, Bootstarp, Javascript, Jquery
+                        </div>
+                        <h1>Karnaugh Map Solver</h1>
+                        <div class="well well-lg" id="background_info">
+                            <h2>Background Information</h2>
+                            <div>Karnaugh Maps are a method of simplifying Boolean algebra.
+                                It's most common use includes minimizing digital circuits in electrical
+                                and computer engineering.
+                                The video below gives a quick introduction to the notation for Karnaugh Maps and their notation.<br><br>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div>
+                                        <div class="embed-responsive embed-responsive-4by3">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AwLN6qjdo9Q"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="well well-lg" id="tutorial">
+                            <h2>A Quick Tutorial</h2>
+                            <div>
+                                This project is made in Javascript and is hosted using Amazon's Cloud Services
+                                for low-latency service. You can access the page by clicking <a href="http://www.karnaughmapsolver.com.s3-website-ap-southeast-2.amazonaws.com/">here</a><br><br>
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-10 col-md-offset-1">
+                                        <div class="thumbnail">
+                                            <img src="images/kSolver/k_map_solver_home.png">
+                                            <div class="caption">
+                                                <h4>Home Page</h4>
+                                                <p>
+                                                    The image above shows the page that is shown when you open the application.
+                                                    It mainly consists of 3 main blue buttons
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-10 col-md-offset-1">
+                                        <div class="thumbnail">
+                                            <img src="images/kSolver/k_map_solver_SOP_1.png">
+                                            <div class="caption">
+                                                <h4>Sum of Products Notation</h4>
+                                                <p>
+                                                    When the 'Sum of Products Notation' button is clicked a dialouge box appears.
+                                                    This is shown in the figure above.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-10 col-md-offset-1">
+                                        <div class="thumbnail">
+                                            <img src="images/kSolver/k_map_solver_SOP_2.png">
+                                            <div class="caption">
+                                                <h4>Sum of Products Notation Usage Example</h4>
+                                                <p>
+                                                    Then you have to input the values into the input boxes and click on the 'Calculate' button.
+                                                    Then the solution will be calculated and displayed above the buttons as shown above.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-10 col-md-offset-1">
+                                        <div class="thumbnail">
+                                            <img src="images/kSolver/k_map_solver_POS_1.png">
+                                            <div class="caption">
+                                                <h4>Products of Sums Notation</h4>
+                                                <p>
+                                                    When the 'Product of Sums Notation' button is clicked a dialouge box appears.
+                                                    This is shown in the figure above.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-10 col-md-offset-1">
+                                        <div class="thumbnail">
+                                            <img src="images/kSolver/k_map_solver_POS_2.png">
+                                            <div class="caption">
+                                                <h4>Product of Sums Notation Usage Example</h4>
+                                                <p>
+                                                    Then you have to input the values into the input boxes and click on the 'Calculate' button.
+                                                    Then the solution will be calculated and displayed above the buttons as shown above.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-10 col-md-offset-1">
+                                        <div class="thumbnail">
+                                            <img src="images/kSolver/k_map_solver_truth_table.png">
+                                            <div class="caption">
+                                                <h4>Truth Table</h4>
+                                                <p>
+                                                    When the 'Enter Truth Table' button is clicked a dialouge box appears. This is shown in the figure above.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-10 col-md-offset-1">
+                                        <div class="thumbnail">
+                                            <img src="images/kSolver/k_map_solver_truth_table_1.png">
+                                            <div class="caption">
+                                                <h4>Creating a Truth Table</h4>
+                                                <p>
+                                                    To input values into a truth table first you have to first input the size of the truth table and then clicking the 'Create Truth Table' button.
+                                                    For example entering 3 will give the result shown in the figure above.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-10 col-md-offset-1">
+                                        <div class="thumbnail">
+                                            <img src="images/kSolver/k_map_solver_truth_table_2.png">
+                                            <div class="caption">
+                                                <h4>Truth Table Usage Example (Min Terms)</h4>
+                                                <p>
+                                                    The default values in the truth table is 0.
+                                                    You change it to 1 or X (i.e. don't care) using the dropdown menu.
+                                                    You then have to choose between using the 'Product of Sums Notation' or the 'Sum of Products Notation'.
+                                                    Selecting the 'Get Min Terms' radio button will make the program calulcate using the 'Sum of Products Notation'.
+                                                    The solution will be calculated after you click on the 'Calculate' button.
+                                                    The solution will be provided below the truth table as shown above.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-10 col-md-offset-1">
+                                        <div class="thumbnail">
+                                            <img src="images/kSolver/k_map_solver_truth_table_3.png">
+                                            <div class="caption">
+                                                <h4>Truth Table Usage Example (Max Terms)</h4>
+                                                <p>
+                                                    Selecting the 'Get Max Terms' radio button will make the program calulcate using the 'Product of Sums Notation' as shown above.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="well well-lg" id="implementation">
+                            <h2>Implementation</h2>
+                            <div>
+                                This program uses the Quine-McCluskey Method to solve Karnaugh Maps
+                                This enables the program to solve Karnaugh Maps any dimensions in theory.
+                                I have tested it with 6 and 7-dimensional problems and it has performed very well
+                                The video below shows how the Quine-McCluskey Method works<br><br>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div>
+                                        <div class="embed-responsive embed-responsive-4by3">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VnZLRrJYa2I"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><br><br>
+                            <div>
+                                The source code for this program can found on my <a href="https://github.com/mnahm5/Karnaugh-Map-Solver">GitHub</a> account
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+
+<script>
+
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/webCrawler.js"></script>
+</body>
+</html>
